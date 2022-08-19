@@ -33,13 +33,13 @@ DEBUG = True
 #### -------------------------------------------------- ####
 
 ALLOWED_HOSTS = [
-    '127.0.0.1',
-    'localhost',
+    "127.0.0.1",
+    "localhost",
 ]
 
 INTERNAL_IPS = [
-    '127.0.0.1',
-    'localhost',
+    "127.0.0.1",
+    "localhost",
 ]
 
 
@@ -57,12 +57,12 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
 
     # Project applications
-
+    "users.apps.UsersConfig",
     # Third party applications
-    'debug_toolbar'
+    "debug_toolbar"
 ]
 
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
+CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 
 #### -------------------------------------------------- ####
@@ -134,15 +134,15 @@ WSGI_APPLICATION = "toeic_score.wsgi.application"
 #### ------------------------------------------------- ####
 
 DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'toeic_score',
-            'USER': 'yuhua',
-            'PASSWORD': '526625',
-            'HOST': 'localhost',
-            'PORT': '5432',
-            'TEST': {
-                'NAME': 'test_01'
+        "default": {
+            "ENGINE": "django.db.backends.postgresql",
+            "NAME": "toeic_score",
+            "USER": "yuhua",
+            "PASSWORD": "526625",
+            "HOST": "localhost",
+            "PORT": "5432",
+            "TEST": {
+                "NAME": "test_01"
             }
         }
     }
@@ -166,8 +166,8 @@ AUTH_PASSWORD_VALIDATORS = [
 #### ------------- INTERNATIONALIZATION -------------- ####
 #### ------------------------------------------------- ####
 
-LANGUAGE_CODE = 'fr'
-TIME_ZONE = 'Europe/Paris'
+LANGUAGE_CODE = "fr"
+TIME_ZONE = "Europe/Paris"
 USE_I18N = True
 USE_L10N = True
 USE_TZ = True
